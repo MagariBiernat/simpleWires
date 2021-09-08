@@ -1,29 +1,68 @@
 import Link from "next/link"
 import styles from "./Navigation.module.scss"
 import { GiCctvCamera as Cctv } from "react-icons/gi"
+
 const Navigation = () => {
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
+        <div className={styles.menu_mobile}>
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul>
+            <li>
+              <Link href="/dom">
+                <a>Dla domu</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/dom">
+                <a>Dla domu</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/dom">
+                <a>Dla domu</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/dom">
+                <a>Dla domu</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/dom">
+                <a>Dla domu</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/dom">
+                <a>Dla domu</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
         <div className={styles.logo}>
           <Link href="/">
             <a>SimpleWires</a>
           </Link>
         </div>
-        <div>
+        <div className={styles.menu}>
           <ul className={styles.menu_list}>
             <li className={styles.menu_item}>
               <Link href="/dom">
                 <a>Dla domu</a>
               </Link>
-              {/* <nav className={styles.menu_dropdown}>
+              <nav className={styles.menu_dropdown}>
                 <ul>
                   <li>Kamery 1 dom</li>
                   <li>Kamery 2</li>
                   <li>Kamery 3</li>
                   <li>Kamery 4</li>
                 </ul>
-              </nav> */}
+              </nav>
             </li>
             <li className={styles.menu_item}>
               <Link href="/firma">
