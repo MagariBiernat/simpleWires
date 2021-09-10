@@ -12,7 +12,11 @@ const Footer = () => {
             <p>Copyright &copy; 2021 SimpleWires. All rights reserved</p>
             <p>
               Created By
-              <a href="https://github.com/magariBiernat" target="_blank">
+              <a
+                href="https://github.com/magariBiernat"
+                rel="noreferrer"
+                target="_blank"
+              >
                 Bartłomiej Biernat
               </a>
             </p>
