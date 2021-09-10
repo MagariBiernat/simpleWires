@@ -90,7 +90,7 @@ const Navigation = () => {
               </nav>
             </li>
             <li className={styles.menu_item}>
-              <Link href="outsourcing">
+              <Link href="/outsourcing">
                 <a>Outsourcing</a>
               </Link>
             </li>

@@ -1,7 +1,6 @@
 import React from "react"
 import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import Head from "next/head"
 import styles from "./HeadingSlider.module.scss"
 
 //Arrows
@@ -74,26 +73,32 @@ const HeadingSlider = () => {
   }
 
   return (
-    <div className={styles.Wrapper}>
-      <Slider {...sliderSettings}>
-        {MockData.map((item, index) => (
-          <div
-            key={index}
-            className={styles.sliderElement}
-            style={{ background: `url('${item.image}')` }}
-          >
-            <img src={item.image} />
-            <div className={`content ${styles.sliderElement_data}`}>
-              <h2>{item.headingTitle}</h2>
-              <p>{item.paragraphText}</p>
-              <button style={{ background: `${item.buttonColor}` }}>
-                Sprawdź ofertę
-              </button>
+    <>
+      <Head>
+        <link rel="stylesheet" type="text/css" href="/slick.css" />
+        <link rel="stylesheet" type="text/css" href="/slick-theme.css" />
+      </Head>
+      <div className={styles.Wrapper}>
+        <Slider {...sliderSettings}>
+          {MockData.map((item, index) => (
+            <div
+              key={index}
+              className={styles.sliderElement}
+              style={{ background: `url('${item.image}')` }}
+            >
+              <img src={item.image} />
+              <div className={`content ${styles.sliderElement_data}`}>
+                <h2>{item.headingTitle}</h2>
+                <p>{item.paragraphText}</p>
+                <button style={{ background: `${item.buttonColor}` }}>
+                  Sprawdź ofertę
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
+          ))}
+        </Slider>
+      </div>
+    </>
   )
 }
 

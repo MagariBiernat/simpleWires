@@ -1,6 +1,6 @@
-import Layout from "@components/Layout"
+import Layout from "./../components/Layout"
 
-import { SITE_DOMAIN } from "@util/constants"
+import { SITE_DOMAIN } from "./../util/constants"
 
 export default function Cztery0Cztery() {
   const pageMeta = {

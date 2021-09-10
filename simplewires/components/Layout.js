@@ -1,5 +1,5 @@
-import SEO from "@components/SEO"
-import Navigation from "@components/Navigation"
+import SEO from "./SEO"
+import Navigation from "./Navigation"
 import styles from "./Layout.module.scss"
 import Footer from "./Footer"
 

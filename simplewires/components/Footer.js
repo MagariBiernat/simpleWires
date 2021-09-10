@@ -1,8 +1,6 @@
 import React from "react"
 import styles from "./Footer.module.scss"
 
-import { AiOutlineHeart } from "react-icons/ai"
-
 const Footer = () => {
   return (
     <footer className={styles.Footer}>
