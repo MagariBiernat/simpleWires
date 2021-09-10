@@ -1,14 +1,18 @@
 @import "./sassStyles/variables";
+@import "../styles/sassStyles/mixins";
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Fira Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Montserrat ", Fira Sans, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
   width: 100vw;
+  // overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -18,4 +22,32 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+*:focus {
+  outline: none;
+}
+
+.content {
+  max-width: 960px;
+  width: 80vw;
+  margin: 0 auto;
+
+  // @include customMaxBreakPoint(960){
+  //   max-width:860px;
+  // }
+
+  // @include lgMaxBreakPoint {
+
+  // }
+}
+
+.relative {
+  position: relative;
 }

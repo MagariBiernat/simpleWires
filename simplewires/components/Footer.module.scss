@@ -1,0 +1,69 @@
+@import "../styles/sassStyles/variables";
+@import "../styles/sassStyles/mixins";
+
+.Footer {
+  position: relative;
+  //   padding-top: 80px;
+  height: 300px;
+  width: 100vw;
+  background: $footerColor;
+  margin-top: 100px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-right: 100vw solid $footerColor;
+  }
+}
+
+.Copyrights {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 4px 5%;
+
+  > div {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @include smMaxBreakPoint {
+      flex-direction: column-reverse;
+
+      > p {
+        margin: 0;
+      }
+    }
+
+    > p:nth-child(1) {
+      font-size: 0.7rem;
+      color: transparentize($color: #f2f2f2, $amount: 0.6);
+    }
+
+    > p:nth-child(2) {
+      font-size: 0.7rem;
+      color: transparentize($color: #f2f2f2, $amount: 0.8);
+
+      > a {
+        padding-left: 6px;
+        color: $mainYellow;
+        text-decoration: underline;
+      }
+    }
+
+    > p {
+      @include smMaxBreakPoint {
+        font-size: 0.6rem !important;
+      }
+    }
+  }
+}

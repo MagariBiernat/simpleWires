@@ -18,28 +18,28 @@ const Navigation = () => {
               </Link>
             </li>
             <li>
-              <Link href="/dom">
-                <a>Dla domu</a>
+              <Link href="/firma">
+                <a>Dla firmy</a>
               </Link>
             </li>
             <li>
-              <Link href="/dom">
-                <a>Dla domu</a>
+              <Link href="/outsourcing">
+                <a>Outsourcing</a>
               </Link>
             </li>
             <li>
-              <Link href="/dom">
-                <a>Dla domu</a>
+              <Link href="/o-nas">
+                <a>O nas</a>
               </Link>
             </li>
             <li>
-              <Link href="/dom">
-                <a>Dla domu</a>
+              <Link href="/wspolpraca">
+                <a>Wspolpraca</a>
               </Link>
             </li>
             <li>
-              <Link href="/dom">
-                <a>Dla domu</a>
+              <Link href="/wsparcie">
+                <a>Wsparcie</a>
               </Link>
             </li>
           </ul>
@@ -66,7 +66,7 @@ const Navigation = () => {
             </li>
             <li className={styles.menu_item}>
               <Link href="/firma">
-                <a>Dla Firmy</a>
+                <a>Dla firmy</a>
               </Link>
               <nav className={styles.menu_dropdown}>
                 <ul>
