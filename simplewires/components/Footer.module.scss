@@ -3,13 +3,12 @@
 
 .Footer {
   position: relative;
-  //   padding-top: 80px;
-  height: 300px;
+  padding: 68px 0 74px;
   width: 100vw;
   background: $footerColor;
   margin-top: 100px;
 
-  &:after {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -23,6 +22,55 @@
   }
 }
 
+.FooterContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 32px;
+  row-gap: 0px;
+  padding: 16px;
+
+  @include mdMaxBreakPoint {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  > .FooterContent_Element {
+    display: flex;
+    flex-direction: column;
+
+    > h1 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      color: transparentize($color: #f2f2f2, $amount: 0.6);
+      letter-spacing: 4px;
+      margin: 26px 0 6px;
+    }
+
+    > a {
+      font-size: 0.8rem;
+      margin-top: 8px;
+      color: transparentize($color: #f2f2f2, $amount: 0.3);
+      cursor: pointer;
+
+      @include mdMaxBreakPoint {
+        margin-top: 16px;
+        font-size: 0.9rem;
+      }
+
+      @include smMaxBreakPoint {
+        font-size: 0.7rem;
+      }
+
+      &:hover {
+        color: $mainYellow;
+      }
+    }
+  }
+}
+
+.Colorfur {
+  color: $mainYellow;
+}
+
 .Copyrights {
   position: absolute;
   bottom: 0;
@@ -34,7 +82,7 @@
   > div {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     @include smMaxBreakPoint {
       flex-direction: column-reverse;

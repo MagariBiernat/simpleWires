@@ -47,7 +47,7 @@
       height: 1px;
       margin-bottom: 5px;
       position: relative;
-      background: #cdcdcd;
+      background: $mainYellow;
       border-radius: 3px;
       z-index: 4;
       transform-origin: 4px 0px;
@@ -84,7 +84,7 @@
       transform: rotate(-45deg) translate(0, -1px);
     }
 
-    & ul {
+    & > div {
       display: none;
       position: fixed;
       top: 0;
@@ -93,26 +93,40 @@
       bottom: -200px;
       margin: 0;
       z-index: 3;
-      padding: 50px;
-      padding-top: 60px;
-      background: #ededed;
-      list-style-type: none;
-      -webkit-font-smoothing: antialiased;
-    }
+      padding-bottom: 200px;
+      background: #7a7777;
+      overflow-x: hidden;
+      overflow-y: auto;
 
-    & ul > li {
-      padding: 16px 0;
-      font-size: 1.2rem;
-      color: rgb(0, 0, 0);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      & > ul {
+        width: 100%;
+        padding: 50px;
+        padding-top: 60px;
+        z-index: 3;
 
-      &:hover {
-        color: transparentize($mainYellow, $amount: 0.2);
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+
+        & > li {
+          padding: 16px 0;
+          font-size: 0.9rem;
+          letter-spacing: 2px;
+          color: rgb(0, 0, 0);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+          @include smMaxBreakPoint {
+            font-size: 0.8rem;
+          }
+
+          // &:hover {
+          //   color: transparentize($mainYellow, $amount: 0.2);
+          // }
+        }
       }
     }
 
-    & input:checked ~ ul {
+    & input:checked ~ div {
       display: block;
     }
   }
@@ -153,6 +167,11 @@
   padding: 6px 0;
 }
 
+.active {
+  color: transparentize($mainYellow, $amount: 0.2);
+  border-bottom-color: transparentize($mainYellow, $amount: 0.2);
+}
+
 .menu_item:hover > a {
   color: transparentize($mainYellow, $amount: 0.2);
   border-bottom-color: transparentize($mainYellow, $amount: 0.2);
@@ -166,7 +185,7 @@
   background: #cdcdcd;
   visibility: hidden;
   opacity: 0;
-  z-index: 2;
+  z-index: 0;
   transition: all 0.2s ease-in;
   box-shadow: 0 15px 25px 0px rgba(255, 255, 255, 0.1);
 
@@ -184,12 +203,17 @@
       align-items: center;
       height: 100%;
       width: 160px;
-      /* padding: 16px; */
       list-style: none;
       color: #000;
       cursor: pointer;
       transition: all 0.4s ease-in-out;
       font-weight: 200;
+
+      > a {
+        margin: 16px;
+        font-size: 1rem;
+        font-weight: normal;
+      }
 
       > svg {
         height: 28px;
@@ -207,6 +231,7 @@
   visibility: visible;
   top: 48px;
   opacity: 1;
+  z-index: 2;
 }
 
 .divider {
