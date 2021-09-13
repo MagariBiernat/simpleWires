@@ -38,6 +38,25 @@ const MockData = [
       "url(https://images.unsplash.com/photo-1582773427596-89ed5298e255?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80)",
     color: "#ffffff",
   },
+  ,
+  {
+    subTitle: "Lorem ipsum dolem ipsum",
+    mainTitle: "Main title sample",
+    buttonText: "Więcej",
+    bgColor: "#ffffff",
+    bgImage:
+      "url(https://images.unsplash.com/photo-1586772002345-339f8042a777?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80)",
+    color: "#ffffff",
+  },
+  {
+    subTitle: "Lorem ipsum dolem ipsum",
+    mainTitle: "Main title sample",
+    buttonText: "Więcej",
+    bgColor: "#ffffff",
+    bgImage:
+      "url(https://images.unsplash.com/photo-1599949104055-2d04026aee1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80)",
+    color: "#ffffff",
+  },
 ]
 
 const Tiles = () => {

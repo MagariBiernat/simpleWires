@@ -142,6 +142,7 @@
   align-items: center;
   margin: 0;
   height: 40px;
+  padding-inline-start: 0px;
 }
 
 .menu {
@@ -155,7 +156,8 @@
   flex-direction: row;
   align-items: center;
   /* position: relative; */
-  margin-right: 36px;
+  margin-right: 18px;
+  margin-left: 18px;
   height: 48px;
   font-size: 1.05rem;
   font-weight: 400;
@@ -167,9 +169,19 @@
   padding: 6px 0;
 }
 
+li.active {
+  background: rgba(121, 121, 121, 0.6);
+}
+
 .active {
   color: transparentize($mainYellow, $amount: 0.2);
   border-bottom-color: transparentize($mainYellow, $amount: 0.2);
+
+  > * {
+    fill: transparentize($mainYellow, $amount: 0.2);
+    color: transparentize($mainYellow, $amount: 0.2);
+    border-bottom-color: transparentize($mainYellow, $amount: 0.2);
+  }
 }
 
 .menu_item:hover > a {
