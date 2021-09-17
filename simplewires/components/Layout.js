@@ -2,6 +2,7 @@ import SEO from "./SEO"
 import Navigation from "./Navigation"
 import styles from "./Layout.module.scss"
 import Footer from "./Footer"
+import ContactSide from "./ContactSide"
 
 export default function Layout({ children, pageMeta }) {
   return (
@@ -13,6 +14,7 @@ export default function Layout({ children, pageMeta }) {
       />
       <Navigation />
       <main>{children}</main>
+      <ContactSide />
       <Footer />
     </div>
   )

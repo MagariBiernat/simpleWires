@@ -1,0 +1,160 @@
+@import "../../styles/sassStyles/variables";
+@import "../../styles/sassStyles/mixins";
+@import "../../styles/sassStyles/animations";
+
+.Wrapper {
+  position: relative;
+  width: 100vw;
+  padding: 0 0 86px;
+  background: rgb(70, 70, 70);
+}
+
+.Header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 320px;
+  background: url("https://images.unsplash.com/photo-1560264280-88b68371db39?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80");
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 20px 20px 2000000px 20px rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  > h2 {
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+
+    > span {
+      color: $mainYellow;
+      font-size: 2.7rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.Content {
+  max-width: 760px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Availability {
+  padding: 42px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(54, 195, 80);
+  border-top: 2px solid $mainYellow;
+  h1,
+  p {
+    text-align: center;
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  p {
+    line-height: 150%;
+  }
+
+  svg {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3.3rem;
+    margin-top: 12px;
+  }
+}
+
+.Section {
+  padding: 42px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(233, 233, 233);
+
+  h1,
+  p {
+    text-align: center;
+    color: #020;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  p {
+    line-height: 150%;
+  }
+
+  ul,
+  li {
+    list-style: circle;
+    line-height: 200%;
+  }
+}
+
+.ContactLater {
+  padding: 62px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: rgb(70, 70, 70);
+
+  > .Content {
+    text-align: right;
+  }
+
+  h1,
+  p,
+  button {
+    text-align: right;
+    color: #fff;
+  }
+
+  button {
+    padding: 12px 32px;
+    border: 0;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    background: rgb(54, 195, 80);
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+  }
+
+  p {
+    line-height: 150%;
+  }
+}
+
+.Security {
+  margin-top: 24px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  column-gap: 36px;
+  row-gap: 36px;
+}

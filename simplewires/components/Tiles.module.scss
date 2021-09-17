@@ -29,10 +29,15 @@
 
 .Tiles {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 32px;
   row-gap: 32px;
+  width: 80%;
+  margin: 0 auto;
 
+  @include customMaxBreakPoint(1260) {
+    grid-template-columns: repeat(2, 1fr);
+  }
   @include lgMaxBreakPoint {
     grid-template-columns: 1fr;
   }
@@ -43,22 +48,25 @@
   padding: 16px 32px;
   text-align: center;
   max-height: 80vh;
-  height: 420px;
+  height: 380px;
   background-position: center;
   background-size: cover;
   z-index: 1;
-  border-radius: 2px;
+  // border-radius: 2px;
   // transition: all 0.3s ease-in-out;
   box-sizing: border-box;
-  border: 5px solid transparent;
+  // border: 5px solid transparent;
   box-shadow: 0 0 35px -3px rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
 
   &:hover {
     border: 5px solid $mainYellow;
   }
 
   @include customMaxBreakPoint(1060) {
-    height: 380px;
+    height: 340px;
   }
 
   > .Overlay {
@@ -78,26 +86,26 @@
     color: white;
 
     > p {
-      font-size: 1.1rem;
+      font-size: 0.9rem;
       letter-spacing: 2px;
 
       @include customMaxBreakPoint(1120) {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
     }
 
     > h6 {
-      font-size: 2.3rem;
+      font-size: 1.7rem;
       margin: 4px;
 
       @include customMaxBreakPoint(1120) {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
       }
     }
 
     > button {
       margin-top: 16px;
-      padding: 16px 32px;
+      padding: 12px 22px;
       background: transparent;
       cursor: pointer;
       transition: all 0.3s ease-in-out;

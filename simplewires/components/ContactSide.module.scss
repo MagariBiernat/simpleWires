@@ -1,0 +1,48 @@
+@import "../styles/sassStyles/variables";
+@import "../styles/sassStyles/mixins";
+
+.Wrapper {
+  position: fixed;
+  top: 55%;
+  right: -2px;
+  display: flex;
+  flex-direction: column;
+  z-index: 99999;
+
+  > div {
+    background: #dfdfdf;
+    //   height: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 12px;
+  }
+
+  svg {
+    margin: 16px 6px;
+    font-size: 36px;
+    margin-left: 6px;
+  }
+}
+
+.Facebook {
+  svg {
+    color: rgb(6, 103, 169);
+  }
+}
+
+.Google {
+  svg {
+    color: rgb(217, 71, 60);
+  }
+}
+
+.Phone {
+  svg {
+    font-size: 32px;
+    color: rgb(141, 187, 39);
+  }
+}

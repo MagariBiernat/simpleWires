@@ -75,8 +75,8 @@ const HeadingSlider = () => {
   return (
     <>
       <Head>
-        <link rel="stylesheet" type="text/css" href="/slick.css" />
-        <link rel="stylesheet" type="text/css" href="/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="/css/slick.css" />
+        <link rel="stylesheet" type="text/css" href="/css/slick-theme.css" />
       </Head>
       <div className={styles.Wrapper}>
         <Slider {...sliderSettings}>

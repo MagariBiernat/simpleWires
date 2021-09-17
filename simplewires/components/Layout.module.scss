@@ -1,4 +1,11 @@
+@import "../styles/sassStyles/variables";
+@import "../styles/sassStyles/mixins";
+
 .MainWrapper {
   position: relative;
-  margin-top: 48px;
+  margin-top: 128px;
+
+  @include lgMaxBreakPoint {
+    margin-top: 82px;
+  }
 }

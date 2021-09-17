@@ -7,16 +7,21 @@
   left: 0;
   right: 0;
   width: 100vw;
-  height: 48px;
+  height: 128px;
   background: rgb(0, 0, 0);
   color: white;
   z-index: 2;
+
+  @include lgMaxBreakPoint {
+    height: 82px;
+  }
 }
 
 .headerContainer {
   margin: 0 auto;
   display: flex;
-  max-width: 1400px;
+  max-width: 1200px;
+  width: 80%;
   height: 100%;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +34,7 @@
     display: block;
     position: relative;
     margin-top: 6px;
-    left: 20px;
+    left: 0px;
     > input {
       display: block;
       width: 26px;
@@ -94,15 +99,16 @@
       margin: 0;
       z-index: 3;
       padding-bottom: 200px;
-      background: #7a7777;
+      background: #adadad;
       overflow-x: hidden;
       overflow-y: auto;
 
       & > ul {
-        width: 100%;
-        padding: 50px;
-        padding-top: 60px;
+        width: 80%;
+        padding: 80px 20px;
         z-index: 3;
+        margin: 0 auto;
+        padding-inline-start: 28px;
 
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
@@ -134,14 +140,16 @@
 
 // todo
 .logo {
-  height: 48px;
+  height: 128px;
+  width: 100px;
+  cursor: pointer;
 }
 
 .menu_list {
   display: flex;
   align-items: center;
   margin: 0;
-  height: 40px;
+  height: 128px;
   padding-inline-start: 0px;
 }
 
@@ -158,7 +166,7 @@
   /* position: relative; */
   margin-right: 18px;
   margin-left: 18px;
-  height: 48px;
+  height: 128px;
   font-size: 1.05rem;
   font-weight: 400;
   list-style: none;
@@ -191,7 +199,7 @@ li.active {
 
 .menu_dropdown {
   position: absolute;
-  top: 60px;
+  top: 160px;
   left: 0;
   width: 100vw;
   background: #cdcdcd;
@@ -241,13 +249,13 @@ li.active {
 
 .menu_item:hover .menu_dropdown {
   visibility: visible;
-  top: 48px;
+  top: 128px;
   opacity: 1;
   z-index: 2;
 }
 
 .divider {
-  width: 3px;
+  width: 100px;
   height: 100%;
 }
 

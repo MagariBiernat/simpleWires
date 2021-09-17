@@ -1,0 +1,144 @@
+@import "../../styles/sassStyles/variables";
+@import "../../styles/sassStyles/mixins";
+@import "../../styles/sassStyles/animations";
+
+.Header {
+  position: relative;
+  width: 100vw;
+  min-height: 540px;
+  background: url("https://images.unsplash.com/photo-1618494324467-bf974ccf5c60?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80");
+  background-position: center;
+  background-size: cover;
+
+  @include lgMaxBreakPoint {
+    min-height: 400px;
+  }
+
+  @include mdMaxBreakPoint {
+    min-height: 300px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  > h1 {
+    position: absolute;
+    min-width: 460px;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    font-size: 3rem;
+
+    @include lgMaxBreakPoint {
+      text-align: left;
+      font-size: 2.7rem;
+      left: 55%;
+      min-width: 420px;
+    }
+
+    @include mdMaxBreakPoint {
+      font-size: 1.8rem;
+      min-width: 300px;
+      left: 60%;
+    }
+
+    span {
+      position: relative;
+      color: $mainYellow;
+      font-size: 3.4rem;
+      letter-spacing: 4px;
+
+      @include lgMaxBreakPoint {
+        font-size: 2.9rem;
+      }
+
+      @include mdMaxBreakPoint {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.BorderBottomRed {
+  border-bottom: 2px solid red;
+}
+
+.Section,
+.Firma {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background: rgb(220, 220, 220);
+
+  > h2 {
+    margin: 0;
+    text-align: center;
+    padding-top: 84px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+  }
+}
+
+.Firma {
+  background: #fff;
+  border-top: 6px solid $mainYellow;
+}
+
+.Content {
+  position: relative;
+  max-width: 1068px;
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 6%;
+  row-gap: 46px;
+  padding: 62px 0;
+
+  @include lgMaxBreakPoint {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ContentElement {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+
+  h3 {
+    color: #020202;
+  }
+
+  p {
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+
+  svg {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  svg.sun {
+    fill: yellow;
+  }
+}
+
+.SubTitle {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
+}

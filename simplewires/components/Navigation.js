@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { useRouter } from "next/router"
 import styles from "./Navigation.module.scss"
 import { RiContactsLine as ContactIcon } from "react-icons/ri"
@@ -7,6 +8,7 @@ import { GrProjects as ProjectsIcon } from "react-icons/gr"
 
 const Navigation = () => {
   const router = useRouter()
+  console.log(router.pathname)
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
@@ -18,24 +20,15 @@ const Navigation = () => {
           <div>
             <ul>
               <li>
-                <Link href="/dom">
+                <Link href="/oferta">
                   <a
                     className={
-                      router.pathname.includes("/dom") && styles.active
+                      router.pathname.includes("/oferta")
+                        ? styles.active
+                        : undefined
                     }
                   >
-                    Dla domu
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/firma">
-                  <a
-                    className={
-                      router.pathname.includes("/firma") && styles.active
-                    }
-                  >
-                    Dla firmy
+                    Oferta
                   </a>
                 </Link>
               </li>
@@ -43,32 +36,52 @@ const Navigation = () => {
                 <Link href="/wsparcie">
                   <a
                     className={
-                      router.pathname.includes("/wsparcie") && styles.active
+                      router.pathname.includes("/wsparcie")
+                        ? styles.active
+                        : undefined
                     }
                   >
                     Wsparcie
                   </a>
                 </Link>
               </li>
+
               <li>
-                <Link href="/outsourcing">
+                <Link href="/o-firmie">
                   <a
                     className={
-                      router.pathname.includes("/outsourcing") && styles.active
+                      router.pathname.includes("/o-firmie")
+                        ? styles.active
+                        : undefined
                     }
                   >
-                    Outsourcing
+                    O firmie
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/o-nas">
+                <Link href="/realizacje">
                   <a
                     className={
-                      router.pathname.includes("/o-nas") && styles.active
+                      router.pathname.includes("/realizacje")
+                        ? styles.active
+                        : undefined
                     }
                   >
-                    O nas
+                    Nasze realizacje
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/kontakt">
+                  <a
+                    className={
+                      router.pathname.includes("/kontakt")
+                        ? styles.active
+                        : undefined
+                    }
+                  >
+                    Kontakt
                   </a>
                 </Link>
               </li>
@@ -76,7 +89,9 @@ const Navigation = () => {
                 <Link href="/wspolpraca">
                   <a
                     className={
-                      router.pathname.includes("/wspolpraca") && styles.active
+                      router.pathname.includes("/wspolpraca")
+                        ? styles.active
+                        : undefined
                     }
                   >
                     Wspolpraca
@@ -87,29 +102,20 @@ const Navigation = () => {
           </div>
         </div>
         <div className={styles.logo}>
-          <Link href="/">
-            <a>SimpleWires</a>
-          </Link>
+          <Link href="/">logo</Link>
         </div>
         <div className={styles.menu}>
           <ul className={styles.menu_list}>
             <li className={styles.menu_item}>
-              <Link href="/dom">
-                <a
-                  className={router.pathname.includes("/dom") && styles.active}
-                >
-                  Dla domu
-                </a>
-              </Link>
-            </li>
-            <li className={styles.menu_item}>
-              <Link href="/firma">
+              <Link href="/oferta">
                 <a
                   className={
-                    router.pathname.includes("/firma") && styles.active
+                    router.pathname.includes("/oferta")
+                      ? styles.active
+                      : undefined
                   }
                 >
-                  Dla firmy
+                  Oferta
                 </a>
               </Link>
             </li>
@@ -117,50 +123,49 @@ const Navigation = () => {
               <Link href="/wsparcie">
                 <a
                   className={
-                    router.pathname.includes("/wsparcie") && styles.active
+                    router.pathname.includes("/wsparcie")
+                      ? styles.active
+                      : undefined
                   }
                 >
                   Wsparcie
                 </a>
               </Link>
             </li>
-            <li className={styles.menu_item}>
-              <Link href="/outsourcing">
-                <a
-                  className={
-                    router.pathname.includes("/outsourcing") && styles.active
-                  }
-                >
-                  Outsourcing
-                </a>
-              </Link>
-            </li>
             <li className={`${styles.menu_item} ${styles.light}`}>
               <a
-                className={router.pathname.includes("/o-nas") && styles.active}
+                className={
+                  router.pathname.includes(
+                    "/kontakt" || "/o-firmie" || "/realizacje"
+                  )
+                    ? styles.active
+                    : undefined
+                }
               >
                 O nas
               </a>
               <nav className={styles.menu_dropdown}>
                 <ul>
-                  <Link href="/o-nas/firma">
+                  <Link href="/o-firmie">
                     <li
                       className={
-                        router.pathname.includes("/o-nas/firma") &&
-                        styles.active
+                        router.pathname.includes("/o-firmie")
+                          ? styles.active
+                          : undefined
                       }
                     >
                       <OfficeIcon />
                       <p>O firmie</p>
                     </li>
                   </Link>
-                  <Link href="/o-nas/realizacje">
+                  <Link href="/realizacje">
                     <li>
                       <ProjectsIcon />
                       <p
                         className={
-                          router.pathname.includes("/o-nas/realizacje") &&
-                          styles.active
+                          router.pathname.includes("/realizacje")
+                            ? styles.active
+                            : undefined
                         }
                       >
                         Nasze realizacje
@@ -168,11 +173,12 @@ const Navigation = () => {
                     </li>
                   </Link>
 
-                  <Link href="/o-nas/kontakt">
+                  <Link href="/kontakt">
                     <li
                       className={
-                        router.pathname.includes("/o-nas/kontakt") &&
-                        styles.active
+                        router.pathname.includes("/kontakt")
+                          ? styles.active
+                          : undefined
                       }
                     >
                       <ContactIcon />
@@ -186,7 +192,9 @@ const Navigation = () => {
               <Link href="/wspolpraca">
                 <a
                   className={
-                    router.pathname.includes("/wspolpraca") && styles.active
+                    router.pathname.includes("/wspolpraca")
+                      ? styles.active
+                      : undefined
                   }
                 >
                   Współpraca
@@ -195,7 +203,7 @@ const Navigation = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.divider}></div>
+        {/* <div className={styles.divider}></div> */}
       </div>
     </header>
   )

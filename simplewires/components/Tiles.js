@@ -62,35 +62,33 @@ const MockData = [
 const Tiles = () => {
   return (
     <div className={styles.TilesWrapper}>
-      <div className="content">
-        <div className={styles.Tiles}>
-          {MockData.map((item, index) => (
-            <div
-              key={index}
-              className={styles.Tile}
-              style={{
-                color: item.color,
-                background: item.bgImage,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <div className={styles.Overlay}></div>
-              <div className={styles.TileDetails}>
-                <p>{item.subTitle}</p>
-                <h6>{item.mainTitle}</h6>
-                <button
-                  style={{
-                    border: `2px solid ${item.color} `,
-                    color: item.color,
-                  }}
-                >
-                  {item.buttonText}
-                </button>
-              </div>
+      <div className={styles.Tiles}>
+        {MockData.map((item, index) => (
+          <div
+            key={index}
+            className={styles.Tile}
+            style={{
+              color: item.color,
+              background: item.bgImage,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className={styles.Overlay}></div>
+            <div className={styles.TileDetails}>
+              <p>{item.subTitle}</p>
+              <h6>{item.mainTitle}</h6>
+              <button
+                style={{
+                  border: `2px solid ${item.color} `,
+                  color: item.color,
+                }}
+              >
+                {item.buttonText}
+              </button>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   )
