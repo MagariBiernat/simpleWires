@@ -24,13 +24,18 @@
 
 .FooterContent {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 32px;
   row-gap: 0px;
   padding: 16px;
 
   @include mdMaxBreakPoint {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center !important;
+
+    * {
+      text-align: center !important;
+    }
   }
 
   > .FooterContent_Element {
@@ -38,7 +43,7 @@
     flex-direction: column;
 
     > h1 {
-      font-size: 0.9rem;
+      font-size: 1rem;
       text-transform: uppercase;
       color: transparentize($color: #f2f2f2, $amount: 0.6);
       letter-spacing: 4px;
@@ -46,24 +51,37 @@
     }
 
     > a {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       margin-top: 8px;
       color: transparentize($color: #f2f2f2, $amount: 0.3);
       cursor: pointer;
 
       @include mdMaxBreakPoint {
         margin-top: 16px;
-        font-size: 0.9rem;
+        font-size: 1rem;
       }
 
       @include smMaxBreakPoint {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
       }
 
       &:hover {
         color: $mainYellow;
       }
     }
+  }
+}
+.AlignLeft {
+  text-align: left;
+}
+.AlignCenter {
+  @include lgMinBreakPoint {
+    text-align: center;
+  }
+}
+.AlignRight {
+  @include lgMinBreakPoint {
+    text-align: right;
   }
 }
 

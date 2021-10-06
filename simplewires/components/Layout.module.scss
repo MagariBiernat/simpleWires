@@ -3,9 +3,13 @@
 
 .MainWrapper {
   position: relative;
-  margin-top: 128px;
+  margin-top: 80px;
 
   @include lgMaxBreakPoint {
     margin-top: 82px;
   }
+}
+
+.OverflowHidden {
+  overflow-y: hidden !important;
 }

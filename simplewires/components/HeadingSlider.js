@@ -3,12 +3,10 @@ import Slider from "react-slick"
 import Head from "next/head"
 import styles from "./HeadingSlider.module.scss"
 
-//Arrows
 import {
-  AiOutlineLeft as ArrowLeft,
-  AiOutlineRight as ArrowRight,
-} from "react-icons/ai"
-
+  BiLeftArrow as ArrowLeft,
+  BiRightArrow as ArrowRight,
+} from "react-icons/bi"
 const MockData = [
   {
     bgColor: "#fff",
@@ -41,9 +39,6 @@ const MockData = [
 
 const HeadingSlider = () => {
   const sliderSettings = {
-    // outerHeight: "60vh",
-    // arrows: false,
-    // fade: true,
     infinite: true,
     speed: 800,
     slidesToShow: 1,

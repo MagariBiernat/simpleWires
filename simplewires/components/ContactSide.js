@@ -1,7 +1,8 @@
 import React from "react"
 import Link from "next/link"
 import styles from "./ContactSide.module.scss"
-import { FaFacebookF, FaGooglePlusG, FaPhone } from "react-icons/fa"
+import { FaFacebookF, FaPhone } from "react-icons/fa"
+import { AiOutlineGoogle } from "react-icons/ai"
 
 const ContactSide = () => {
   return (
@@ -11,17 +12,20 @@ const ContactSide = () => {
           <FaFacebookF />
         </a>
       </div>
-      <div className={styles.Google}>
-        <a href="https://google.com" rel="noreferrer" target="_blank">
-          <FaGooglePlusG />
-        </a>
-      </div>
-
       <Link href="/kontakt" passHref={true}>
         <div className={styles.Phone}>
           <FaPhone />
         </div>
       </Link>
+      <div className={styles.Google}>
+        <a
+          href="https://g.page/r/CYG0C28KSn47EAE "
+          rel="noreferrer"
+          target="_blank"
+        >
+          <AiOutlineGoogle />
+        </a>
+      </div>
     </div>
   )
 }

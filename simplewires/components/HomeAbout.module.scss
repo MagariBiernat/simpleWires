@@ -5,42 +5,87 @@
   position: relative;
   width: 100vw;
   padding: 60px 0;
+  > p {
+    width: 100%;
+    text-align: center;
+    font-size: 2.6rem;
+    letter-spacing: 3px;
+    margin-top: -6px;
+    margin-bottom: 52px;
+  }
 }
 
 .WrapperContent {
   display: grid;
+  width: 80%;
+  max-width: 1068px;
+
+  margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 42px;
+  column-gap: 44px;
+  row-gap: 64px;
+  margin-top: 28px;
+
+  @include customMaxBreakPoint(1128) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   @include lgMaxBreakPoint {
     grid-template-columns: 1fr;
-    row-gap: 32px;
   }
 
   > div {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 64px 44px;
-    background: rgba(240, 240, 240, 0.7);
+    padding-bottom: 14px;
+    background: rgba(242, 242, 242, 0.5);
     text-align: center;
-    box-shadow: 0 12px 22px -6px rgb(0, 0, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: 6px 4px 66px -22px rgb(20, 20, 20, 0.8);
 
     @include lgMaxBreakPoint {
       margin: 0;
     }
 
-    > h4 {
-      font-size: 1.6rem;
-      font-weight: 800;
-      letter-spacing: 2px;
+    > div {
+      position: relative;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      h4 {
+        // position: absolute;
+        // left: 50%;
+        // top: 50%;
+        width: 66%;
+        // transform: translate(-50%, -50%);
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+
+        @include customMaxBreakPoint(1368) {
+        }
+      }
+    }
+
+    > .Top {
+      padding: 14px;
+      margin-bottom: -6px;
+
+      img {
+        width: 32px;
+      }
     }
 
     > p {
       font-size: 0.9rem;
       font-weight: 300;
-      margin: 46px 0;
+      margin: 16px 0 22px;
+      padding: 0px 12px;
     }
 
     > button {
@@ -50,5 +95,47 @@
       border: 3px solid $mainYellow;
       background: transparent;
     }
+  }
+}
+
+.Bottom {
+  position: relative;
+  margin-top: 22px;
+
+  img {
+    width: 100%;
+    max-height: 220px;
+
+    @include lgMaxBreakPoint {
+      max-height: 320px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // box-shadow: inset 10px 0px 120px rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    // width: 60%;
+    transform: translate(-50%, 20%);
+    padding: 14px 22px;
+    background: rgb(198, 40, 48);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: 0;
+    z-index: 1;
+    cursor: pointer;
   }
 }

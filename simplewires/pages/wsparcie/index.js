@@ -3,6 +3,9 @@ import Link from "next/link"
 import Layout from "@components/Layout"
 import styles from "./index.module.scss"
 import { FcAssistant } from "react-icons/fc"
+
+import Slide from "@components/Slide"
+import FadeIn from "@components/FadeIn"
 const index = () => {
   const pageMeta = {
     title: "Simple Wires - Wsparcie",
@@ -18,7 +21,7 @@ const index = () => {
         </header>
         <div>
           <div className={styles.Availability}>
-            <div className={styles.Content}>
+            <Slide duration={0.6} from={"left"} className={styles.Content}>
               <h1>
                 Jesteśmy dostępni 24/7, <br /> 7 dni w tygodniu. <br />{" "}
                 <FcAssistant />
@@ -31,11 +34,11 @@ const index = () => {
                 Unde expedita aperiam vero temporibus voluptatem nobis sit
                 laboriosam harum deserunt numquam.
               </p>
-            </div>
+            </Slide>
           </div>
 
           <div className={styles.Section}>
-            <div className={styles.Content}>
+            <Slide duration={0.6} from={"right"} className={styles.Content}>
               <h1>Lorem ipsum dolor sit.</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
@@ -53,49 +56,49 @@ const index = () => {
                 <li>Lorem ipsum dolor sit. Lorem, ipsum.</li>
                 <li>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.</li>
               </ul>
-            </div>
+            </Slide>
           </div>
 
           <div className={styles.Availability}>
             <div className={styles.Content}>
               <h1>Zapewniamy</h1>
               <div className={styles.Security}>
-                <div>
+                <FadeIn duration={Math.random() * (1 - 0.5) + 0.5}>
                   <FcAssistant />
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
-                </div>
-                <div>
+                </FadeIn>
+                <FadeIn duration={Math.random() * (1 - 0.5) + 0.5}>
                   <FcAssistant />
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
-                </div>
-                <div>
+                </FadeIn>
+                <FadeIn duration={Math.random() * (1 - 0.5) + 0.5}>
                   <FcAssistant />
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
-                </div>
-                <div>
+                </FadeIn>
+                <FadeIn duration={Math.random() * (1 - 0.5) + 0.5}>
                   <FcAssistant />
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
-                </div>
+                </FadeIn>
               </div>
             </div>
           </div>
 
           <div className={styles.ContactLater}>
-            <div className={styles.Content}>
+            <Slide from={"right"} duration={0.6} className={styles.Content}>
               <h1>Chcesz abyśmy skontaktowali się z Tobą później ?</h1>
               <p>Skorzystaj z naszego formularza kontaktowego</p>
               <Link href="/kontakt">
                 <button>Kontakt</button>
               </Link>
-            </div>
+            </Slide>
           </div>
         </div>
       </div>

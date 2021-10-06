@@ -1,13 +1,24 @@
 import { useRouter } from "next/router"
+import Link from "next/link"
 import React from "react"
 import Layout from "../../components/Layout"
 import styles from "./index.module.scss"
+import Slide from "@components/Slide"
+
+import Checkbox from "react-custom-checkbox"
+import { FiCheck } from "react-icons/fi"
+
+const pageMeta = {
+  title: "Simple Wires - kontakt",
+  description: "description",
+}
 
 const Kontakt = () => {
+  const [checkBoxChecked, setCheckBoxChecked] = React.useState(false)
   const router = useRouter()
-  const pageMeta = {
-    title: "Simple Wires - kontakt",
-    description: "description",
+
+  const handleChange = () => {
+    setCheckBoxChecked(!checkBoxChecked)
   }
 
   const handleSubmitForm = (event) => {
@@ -26,25 +37,26 @@ const Kontakt = () => {
           <div className={styles.ContactWrapper}>
             <p></p>
             <div className={styles.Contact}>
-              <div>
+              <Slide from={"left"} duration={0.7}>
                 <p className={styles.Bold}>Bartosz</p>
                 <p className={styles.Specialist}>
-                  Monitoring, Alarm, Inteligentny dom, Okablowanie strukturalne,
-                  WiFi
+                  Specjalista ds. Elektryki Niskonapięciowej, Monitoringu,
+                  Alarmu, Kontroli dostępu, Okablowania strukturalnego, Sieci
+                  LAN
                 </p>
-                <p>+48 123 456 789</p>
-                <p>bhołysz@email.com</p>
-              </div>
+                <p>+48 730 165 916</p>
+                <p>bartek.holysz@simplewires.pl</p>
+              </Slide>
               <div className={styles.ContactDivider}></div>
-              <div>
+              <Slide from={"right"} duration={0.7}>
                 <p className={styles.Bold}>Adrian</p>
                 <p className={styles.Specialist}>
-                  Monitoring, Alarm, Inteligentny dom, Okablowanie strukturalne,
-                  WiFi
+                  Specjalista ds. Instalacji Elektrycznych, Automatyki
+                  budynkowej, osprzętu elektrycznego
                 </p>
-                <p>+48 123 456 789</p>
-                <p>aEmail@email.com</p>
-              </div>
+                <p>+48 536 165 916</p>
+                <p>adrian.mycka@simplewires.pl</p>
+              </Slide>
             </div>
           </div>
           <div className={styles.Map}>
@@ -61,7 +73,11 @@ const Kontakt = () => {
               <br /> A moze chcesz nawiązać współprace? <br /> Wypełnij poniższy
               formularz aby się z nami skontaktować
             </h1>
-            <div className={styles.ContactFormWrapperBottom}>
+            <Slide
+              from={"left"}
+              duration={0.9}
+              className={styles.ContactFormWrapperBottom}
+            >
               <form onSubmit={handleSubmitForm} className={styles.ContactForm}>
                 <div className={styles.FormInput}>
                   <div className={styles.FormInputs}>
@@ -105,23 +121,45 @@ const Kontakt = () => {
                   ></textarea>
                 </div>
                 <div className={styles.FormCheckBox}>
-                  <input type="checkbox" id="rodo" name="rodo" />
+                  <Checkbox
+                    icon={<FiCheck color="#ffee00;" size={20} />}
+                    className={styles.Checkbox}
+                    id="rodo"
+                    type="checkbox"
+                    onChange={handleChange}
+                    value={checkBoxChecked}
+                    size={26}
+                    borderColor="#ffee00;"
+                    borderWidth={3}
+                    style={{ cursor: "pointer", marginRight: 15 }}
+                    labelStyle={{ marginLeft: 15, userSelect: "none" }}
+                  />
                   <label htmlFor="rodo">
-                    Zapoznałem się z informacją o administratorze i
-                    przetwarzaniu danych
+                    Wyrażam zgodę na wykorzystywanie moich danych w celu
+                    przetwarzania mojego zgłoszenia. Informacje i pouczenie o
+                    prawie do odwołania zgody są zawarte w{" "}
+                    <Link href="/prywatnosc">
+                      <span className={styles.Politics}>
+                        Polityce prywatności
+                      </span>
+                    </Link>
                   </label>
                 </div>
                 <div className={styles.FormButtons}>
                   <button type="submit"> Wyślij zapytanie </button>
                 </div>
               </form>
-              <div className={styles.ContactFormWrapperBottomImage}>
+              <Slide
+                from={"right"}
+                duration={1.7}
+                className={styles.ContactFormWrapperBottomImage}
+              >
                 <img
                   src="https://images.unsplash.com/photo-1512626120412-faf41adb4874?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
                   alt=""
                 />
-              </div>
-            </div>
+              </Slide>
+            </Slide>
           </div>
         </div>
       </div>

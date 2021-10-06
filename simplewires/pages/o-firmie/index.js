@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "@components/Layout"
 import styles from "./index.module.scss"
+import Mapa from "@public/images/mapa.png"
 const index = () => {
   const pageMeta = {
     title: "Simple Wires - o firmie",
@@ -55,6 +56,15 @@ const index = () => {
               reprehenderit harum ullam impedit nostrum numquam earum inventore
               ex voluptatibus, culpa delectus nulla nobis odio veniam?
             </p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                padding: "16px",
+              }}
+            >
+              <img src={Mapa} alt="Tutaj działamy" />
+            </div>
           </div>
         </div>
 

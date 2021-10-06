@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <Layout pageMeta={pageMeta}>
       <HeadingSlider />
-      {/* <HomeAbout /> */}
-      <Tiles />
+      <HomeAbout />
+      {/* <Tiles /> */}
       <HomeContactUs />
     </Layout>
   )

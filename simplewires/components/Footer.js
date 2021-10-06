@@ -8,124 +8,109 @@ const Footer = () => {
       <footer className={styles.Footer}>
         <div className="content">
           <div className={styles.FooterContent}>
-            <div className={styles.FooterContent_Element}>
+            <div
+              className={`${styles.FooterContent_Element} ${styles.AlignLeft}`}
+            >
               <h1>
                 <span className={styles.Colorfur}>dla d</span>omu
               </h1>
               <Link href="/">
-                <a>Inteligentny dom</a>
+                <a>Oświetlenie zewnętrzne i wewnętrzne</a>
+              </Link>
+
+              <Link href="/">
+                <a>Montaż osprzętu elektrycznego</a>
               </Link>
               <Link href="/">
-                <a>Biuro</a>
+                <a>Automatyka domowa</a>
               </Link>
               <Link href="/">
-                <a>Ogrzewanie</a>
+                <a>Instalacje elektryczne</a>
               </Link>
               <Link href="/">
-                <a>Multimedia</a>
+                <a>Systemy monitoringu</a>
+              </Link>
+
+              <Link href="/">
+                <a>Systemy alarmowe</a>
+              </Link>
+
+              <Link href="/">
+                <a>Wideodomofony</a>
               </Link>
               <Link href="/">
-                <a>Internet</a>
+                <a>Sieć domowa</a>
               </Link>
+
               <Link href="/">
-                <a>Telefon</a>
-              </Link>
-              <h1>
-                o <span className={styles.Colorfur}>n</span>as
-              </h1>
-              <Link href="/">
-                <a>Misja</a>
-              </Link>
-              <Link href="/">
-                <a>Kontakt</a>
-              </Link>
-              <Link href="/">
-                <a>Produkt</a>
+                <a>Fotowoltaika</a>
               </Link>
             </div>
-            <div className={styles.FooterContent_Element}>
+            <div
+              className={`${styles.FooterContent_Element} ${styles.AlignCenter}`}
+            >
               <h1>
                 dla <span className={styles.Colorfur}>fir</span>my
               </h1>
 
               <Link href="/">
-                <a>Inteligentny dom</a>
+                <a>Telewizja dozorowa CCTV</a>
               </Link>
               <Link href="/">
-                <a>Biuro</a>
-              </Link>
-              <Link href="/">
-                <a>Ogrzewanie</a>
-              </Link>
-              <Link href="/">
-                <a>Przegląd</a>
-              </Link>
-              <Link href="/">
-                <a>Miniserver</a>
-              </Link>
-              <Link href="/">
-                <a>Ogrzewanie</a>
-              </Link>
-              <Link href="/">
-                <a>Przegląd</a>
-              </Link>
-              <Link href="/">
-                <a>Miniserver</a>
-              </Link>
-              <Link href="/">
-                <a>Ogrzewanie</a>
-              </Link>
-              <Link href="/">
-                <a>Przegląd</a>
-              </Link>
-              <Link href="/">
-                <a>Miniserver</a>
-              </Link>
-            </div>
-            <div className={styles.FooterContent_Element}>
-              <h1>
-                outsou<span className={styles.Colorfur}>rci</span>ng
-              </h1>
-              <Link href="/">
-                <a>Hosting</a>
-              </Link>
-              <Link href="/">
-                <a>VPS - linux</a>
+                <a>Automatyka budynkowa</a>
               </Link>
 
               <Link href="/">
-                <a>Inteligentny dom</a>
+                <a>Instalacje Elektryczne</a>
               </Link>
               <Link href="/">
-                <a>Biuro</a>
+                <a>Sieci LAN certyfikowane</a>
+              </Link>
+
+              <Link href="/">
+                <a>Administrowanie sieciami</a>
               </Link>
               <Link href="/">
-                <a>Ogrzewanie</a>
+                <a>Systemy alarmowe</a>
+              </Link>
+              <Link href="/">
+                <a>Wideodomofony</a>
+              </Link>
+              <Link href="/">
+                <a>Kontrola dostępu</a>
+              </Link>
+              <Link href="/">
+                <a>Kontrola czasu pracy</a>
+              </Link>
+
+              <Link href="/">
+                <a>Telefonia VOIP</a>
+              </Link>
+              <Link href="/">
+                <a>Szlabany</a>
+              </Link>
+              <Link href="/">
+                <a>Serwerownie</a>
               </Link>
             </div>
-            <div className={styles.FooterContent_Element}>
+
+            <div
+              className={`${styles.FooterContent_Element} ${styles.AlignRight}`}
+            >
               <h1>
                 o n<span className={styles.Colorfur}>a</span>s
               </h1>
-              <Link href="/">
-                <a>Misja</a>
+              <Link href="/o-firmie">
+                <a>O firmie</a>
               </Link>
-              <Link href="/">
+              <Link href="/kontakt">
                 <a>Kontakt</a>
               </Link>
-              <Link href="/">
-                <a>Produkt</a>
+              <Link href="/wspolpraca">
+                <a>Współpraca</a>
               </Link>
-
-              <h1>o nas</h1>
-              <Link href="/">
-                <a>Misja</a>
-              </Link>
-              <Link href="/">
-                <a>Kontakt</a>
-              </Link>
-              <Link href="/">
-                <a>Produkt</a>
+              <Link href="/wsparcie">
+                <a>Wsparcie</a>
               </Link>
             </div>
           </div>

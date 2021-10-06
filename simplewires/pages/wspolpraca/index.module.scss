@@ -1,0 +1,296 @@
+@import "../../styles/sassStyles/variables";
+@import "../../styles/sassStyles/mixins";
+
+.Wrapper {
+  width: 100%;
+  margin-bottom: 240px;
+  background: rgb(230, 230, 230);
+  overflow-x: hidden;
+}
+
+.Wspolpraca {
+  width: 100%;
+  min-height: 200px;
+  padding: 32px 0 82px;
+  background: #fff;
+  h1 {
+    max-width: 80%;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 16px auto 48px;
+    text-align: center;
+
+    @include mdMaxBreakPoint {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.Logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @include mdMaxBreakPoint {
+    flex-direction: column;
+  }
+
+  > div {
+    width: 20%;
+
+    @include mdMaxBreakPoint {
+      width: 60%;
+      margin-bottom: 16px;
+    }
+    img,
+    svg {
+      width: 100%;
+    }
+  }
+}
+
+.Partnership {
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 42px;
+  padding: 24px 0;
+
+  @include customMaxBreakPoint(1600) {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  @include lgMaxBreakPoint {
+    grid-template-columns: 1fr;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    line-height: 140%;
+    width: 70%;
+
+    @include lgMaxBreakPoint {
+      margin: 0 auto;
+    }
+  }
+
+  p {
+    text-align: left;
+    margin-right: 24px;
+
+    @include lgMaxBreakPoint {
+      margin: 24px auto !important;
+      text-align: center;
+    }
+  }
+
+  > div {
+    @include lgMaxBreakPoint {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  img {
+    margin-top: -62px;
+    width: 95%;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: 0;
+    box-shadow: -16px 70px 90px -10px rgba(0, 0, 0, 0.25);
+
+    @include lgMaxBreakPoint {
+      margin-top: 0;
+      width: 100%;
+      margin: 0 auto !important;
+    }
+  }
+
+  svg {
+    font-size: 42px;
+  }
+}
+
+.PartnershipContact {
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 42px;
+  padding: 24px 0;
+  text-align: right;
+
+  @include customMaxBreakPoint(1600) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  @include lgMaxBreakPoint {
+    grid-template-columns: 1fr;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+
+  @include mdMaxBreakPoint {
+    * {
+      margin: 8px auto !important;
+      text-align: center !important;
+    }
+  }
+
+  @include lgMaxBreakPoint {
+    h1 {
+      margin-top: 24px !important;
+    }
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    line-height: 140%;
+    width: 100%;
+  }
+
+  p {
+    margin-left: 24px;
+  }
+
+  img {
+    margin-top: -62px;
+    width: 95%;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: 0;
+    box-shadow: 16px 20px 40px -10px rgba(0, 0, 0, 0.4);
+  }
+
+  svg {
+    font-size: 42px;
+  }
+
+  button {
+    background: #020202;
+    font-size: 2rem;
+    border: 0;
+    padding: 12px 32px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: #242424;
+    }
+  }
+}
+
+.ContactPartnership {
+  width: 100%;
+  padding: 84px;
+  background: #fff;
+
+  @include lgMaxBreakPoint {
+    padding: 24px;
+  }
+  h1 {
+    font-size: 1.7rem;
+    text-align: left;
+    margin-bottom: 44px;
+    letter-spacing: 2px;
+    font-weight: 300;
+
+    @include lgMaxBreakPoint {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.ContactPartnershipForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 64px;
+  row-gap: 24px;
+
+  @include lgMaxBreakPoint {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  > div:nth-of-type(1),
+  > div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+
+    input,
+    textarea,
+    select {
+      appearance: none;
+      border-radius: 2px;
+      border: 1px solid rgb(0, 0, 0);
+      padding: 4px 12px;
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+      @include lgMaxBreakPoint {
+        padding: 12px;
+      }
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: $mainYellow;
+    }
+  }
+
+  > div:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+    grid-column: 1 / span 2;
+    width: 100%;
+
+    @include lgMaxBreakPoint {
+      grid-column: auto;
+    }
+
+    input {
+      min-height: 32px;
+      min-width: 32px;
+      margin-right: 16px;
+      cursor: pointer;
+    }
+
+    font-size: 0.9rem;
+  }
+
+  button {
+    background: $mainYellow;
+    border: 2px ridge rgba(0, 0, 0, 0.4);
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 16px 12px;
+    cursor: pointer;
+  }
+
+  button:disabled {
+    background: grey;
+    cursor: not-allowed;
+  }
+}
+
+.Politics {
+  color: rgb(230, 0, 20);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Checkbox {
+}

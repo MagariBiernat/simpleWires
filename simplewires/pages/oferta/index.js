@@ -2,195 +2,25 @@ import React from "react"
 import Layout from "@components/Layout"
 import styles from "./index.module.scss"
 import TextLoop from "react-text-loop"
-import {
-  FcElectricalSensor,
-  FcElectricalThreshold,
-  FcAutomatic,
-  FcAlarmClock,
-  FcWebcam,
-  FcWiFiLogo,
-  FcHome,
-  FcIdea,
-} from "react-icons/fc"
-import { BiSun } from "react-icons/bi"
-import { SiIntercom } from "react-icons/si"
-const MockData = [
-  {
-    title: "Instalacje Elektryczne",
-    description:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    icon: <FcElectricalSensor />,
-  },
-  {
-    title: "Instalacje SAT / NAZ",
-    description: "consectetur, adipisci velit, consectetur, adipisci velit",
-    icon: <FcElectricalThreshold />,
-  },
-  {
-    title: "Automatyka domowa",
-    subtitle: "Napędy do bram, podłączanie rolet",
-    description:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    icon: <FcAutomatic />,
-  },
-  {
-    title: "Alarm",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcAlarmClock />,
-  },
-  {
-    title: "Monitoring",
-    description:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    icon: <FcWebcam />,
-  },
-  {
-    title: "Wideodomofony",
-    description:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, lorem ipsum",
-    icon: <SiIntercom />,
-  },
-  {
-    title: "Fotowoltaika",
-    description:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    icon: <BiSun className={styles.sun} />,
-  },
-  {
-    title: "Sieć domowa",
-    subtitle: "WiFi, LAN",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcWiFiLogo />,
-  },
-  {
-    title: "BIały Montaż",
-    description:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    icon: <FcHome />,
-  },
-  {
-    title: "Oświetlenie zewnętrzne",
-    description:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: "Oświetlenie ogrodowe",
-    description:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Instalacje LED",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-]
+import FadeIn from "@components/FadeIn"
+import OfertaData from "data/Oferta"
+import ModalOferta from "@components/ModalOferta"
+import { GrContactInfo } from "react-icons/gr"
 
-const MockDataFirma = [
-  {
-    title: " Systemy Alarmowe",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Wideodomofony",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Telefonia VOIP",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Kontrola Dostępu",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Kontrola Czasu Pracy",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Szlabany",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Automatyka Budynkowa",
-    subtitle: "Napędy do bram",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Sieci LAN",
-    subtitle: "Certyfikowane",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Serwerownie",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Administrowanie Sieciami",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Telewizja Dozorowa",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Światłowody",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Instalacje Elektryczne",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-  {
-    title: " Biały Montaż",
-    description:
-      "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    icon: <FcIdea />,
-  },
-]
-const index = () => {
+const Oferta = () => {
+  const [oferta, setOferta] = React.useState(null)
   const pageMeta = {
     title: "Simple Wires - Dla Domu",
     description: "dla domu",
   }
   return (
-    <Layout pageMeta={pageMeta}>
+    <Layout pageMeta={pageMeta} modalOpen={oferta && true}>
+      {oferta && <ModalOferta oferta={oferta} setOferta={setOferta} />}
       <header className={styles.Header}>
         <h1>
           Rozwiązania dla <br />
           <TextLoop interval={3500}>
             <span>
-              {" "}
               <span className={styles.BorderBottomRed}>Twojego</span> domu
             </span>
             <span>
@@ -205,47 +35,100 @@ const index = () => {
       <section className={styles.Section}>
         <h2>Dla Twojego domu</h2>
         <div className={styles.Content}>
-          {MockData.map((item, index) => (
-            <div key={index} className={styles.ContentElement}>
-              {item.icon}
+          {OfertaData.map(
+            (item, index) =>
+              item.type === "dom" && (
+                <FadeIn
+                  key={index}
+                  className={styles.ContentElement}
+                  duration={Math.random() * (1 - 0.5) + 0.5}
+                >
+                  <div className={styles.Top}>
+                    {item.icon}
 
-              <h3>
-                {item.title}{" "}
-                {item.subtitle && (
-                  <>
-                    <br />
-                    <span className={styles.SubTitle}>{item.subtitle}</span>
-                  </>
-                )}
-              </h3>
-              <p>{item.description}</p>
-            </div>
-          ))}
+                    <h4>{item.title}</h4>
+                    <div></div>
+                  </div>
+                  <div className={styles.Bottom}>
+                    <img src={item.imageBottom} alt="" />
+                    <button
+                      onClick={() =>
+                        setOferta(
+                          OfertaData.find((item) => item.id === index + 1)
+                        )
+                      }
+                    >
+                      Więcej
+                    </button>
+                  </div>
+                </FadeIn>
+              )
+          )}
         </div>
       </section>
+      <article className={styles.Decide}>
+        <div>
+          <h2>Jesteś zdecydowany na naszą ofertę? Dowiedz się, co dalej!</h2>
+          <div className={styles.DecideGrid}>
+            <div>
+              <GrContactInfo /> <h1>Skontaktuj się z nami</h1>{" "}
+              <p>Wypełnij formularz, albo zadzwoń do nas</p>
+            </div>
+            <div>
+              <GrContactInfo /> <h1>Umówmy się na spotkanie</h1>{" "}
+              <p>Wypełnij formularz, albo zadzwoń do nas </p>
+            </div>
+            <div>
+              <GrContactInfo /> <h1>Przygotujemy ofertę</h1>{" "}
+              <p>Wypełnij formularz, albo zadzwoń do nas</p>
+            </div>
+          </div>
+        </div>
+      </article>
       <section className={(styles.Section, styles.Firma)}>
         <h2>Dla Twojej firmy</h2>
         <div className={styles.Content}>
-          {MockDataFirma.map((item, index) => (
-            <div key={index} className={styles.ContentElement}>
-              {item.icon}
+          {OfertaData.map(
+            (item, index) =>
+              item.type === "firma" && (
+                <FadeIn
+                  key={index}
+                  className={styles.ContentElement}
+                  duration={Math.random() * (1 - 0.5) + 0.5}
+                >
+                  <div className={styles.Top}>
+                    {item.icon}
 
-              <h3>
-                {item.title}{" "}
-                {item.subtitle && (
-                  <>
-                    <br />
-                    <span className={styles.SubTitle}>{item.subtitle}</span>
-                  </>
-                )}
-              </h3>
-              <p>{item.description}</p>
-            </div>
-          ))}
+                    <h4>{item.title}</h4>
+                    <div></div>
+                  </div>
+                  <div className={styles.Bottom}>
+                    <img src={item.imageBottom} alt="" />
+                    <button
+                      onClick={() =>
+                        setOferta(
+                          OfertaData.find((item) => item.id === index + 1)
+                        )
+                      }
+                    >
+                      Więcej
+                    </button>
+                  </div>
+                </FadeIn>
+              )
+          )}
         </div>
       </section>
+      <div className={styles.LeaveNumber}>
+        <div>
+          <h1>
+            Masz pytania? Jesteś niezdecydowany? Zostaw numer, oddzwonimy !
+          </h1>
+          <button>Zostaw numer</button>
+        </div>
+      </div>
     </Layout>
   )
 }
 
-export default index
+export default Oferta

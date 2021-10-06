@@ -2,8 +2,27 @@
 @import "../styles/sassStyles/mixins";
 
 .Wrapper {
+  position: relative;
   width: 100vw;
   padding-bottom: 100px;
+  > p {
+    width: 100%;
+    text-align: center;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40%;
+    background: transparent;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100vw solid transparentize($color: $mainYellow, $amount: 0.2);
+    z-index: 0;
+  }
 }
 
 .ContentWrapper {
@@ -13,35 +32,40 @@
   justify-content: center;
   padding: 48px 8px;
   text-align: center;
+  z-index: 1;
+
+  * {
+    z-index: inherit;
+  }
 
   > h1 {
     position: relative;
     font-size: 2.6rem;
     margin: 16px;
-    font-weight: 300;
-    letter-spacing: 3px;
-    background: transparent;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 4px;
+    background: rgb(198, 40, 48);
+    color: #fff;
     z-index: 1;
 
     @include lgMaxBreakPoint {
       font-size: 1.8rem;
     }
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      right: -30%;
-      top: 0;
-      height: 100%;
-      width: 60%;
-      background: $mainYellow;
-      z-index: -1;
-    }
+  p.Top {
+    font-size: 2rem;
+    line-height: 100%;
+    font-weight: 600;
+    margin: 6px;
   }
 
   > p {
     letter-spacing: 2px;
     font-size: 0.9rem;
+    width: 75%;
+    font-weight: 600;
   }
 
   > p.bolded,
@@ -58,16 +82,17 @@
     padding: 16px 24px;
     border: 0;
     margin: 12px;
-    background: $mainYellow;
-    color: #000;
+    background: rgb(26, 26, 26);
+    color: #fff;
     font-size: 1.2rem;
     letter-spacing: 3px;
     cursor: pointer;
+    font-weight: 600;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      background: #000;
-      color: #fff;
+      background: #ddd;
+      color: #020202;
     }
   }
 }
