@@ -1,0 +1,44 @@
+@import "../styles/sassStyles/variables";
+@import "../styles/sassStyles/mixins";
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  z-index: 12;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Wrapper {
+  max-width: 90vw;
+  padding: 32px 22px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  input {
+    padding: 24px;
+    text-align: center;
+  }
+  input::placeholder {
+    text-align: center;
+  }
+
+  button {
+    background: $mainYellow;
+    border: 0;
+    padding: 16px;
+  }
+}

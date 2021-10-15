@@ -221,7 +221,7 @@ const Navigation = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.divider}></div>
+        {/* <div className={styles.divider}></div> */}
       </div>
     </header>
   )

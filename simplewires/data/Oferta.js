@@ -5,13 +5,7 @@ export default [
     title: "Instalacje Elektryczne",
     description:
       "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: ["../images/kable2.jpg"],
+
     imageBottom: "../images/kable2.jpg",
 
     icon: <img src="../icons/4.png" />,
@@ -22,17 +16,7 @@ export default [
     title: "Systemy Monitoringu",
     description:
       "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
+
     // icon: <FcWebcam />,
     icon: <img src="../icons/7.png" />,
     imageBottom: "../images/kamera3.jpg",
@@ -43,17 +27,7 @@ export default [
     title: "Systemy Alarmowe",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "../images/alarm.jpg",
-      "../images/alarm2.jpg",
-      "../images/alarm.jpg",
-    ],
+
     // icon: <FcAlarmClock />,
     icon: <img src="../icons/8.png" />,
     imageBottom: "../images/alarm2.jpg",
@@ -65,21 +39,16 @@ export default [
     subtitle: "Napędy do bram, podłączanie rolet",
     description:
       "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
-    imageBottom:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80",
+
+    imageBottom: "../images/biuro.jpg",
     // icon: <FcAutomatic />,
-    icon: <img src="../icons/3.png" />,
+    icon: (
+      <img
+        src="../icons/automatic.png"
+        title="hey"
+        alt='Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>'
+      />
+    ),
   },
   {
     id: 8,
@@ -88,12 +57,7 @@ export default [
     subtitle: "WiFi, LAN",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
+
     modalImages: ["../images/modem.jpg", "../images/modem2.jpg"],
     // icon: <FcWiFiLogo />,
     icon: <img src="../icons/3.png" />,
@@ -105,17 +69,7 @@ export default [
     title: "Wideodomofony",
     description:
       "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, lorem ipsum",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
+
     // icon: <SiIntercom />,
     icon: <img src="../icons/6.png" />,
     imageBottom:
@@ -127,21 +81,10 @@ export default [
     title: "Montaż osprzętu elektrycznego i maszyn",
     description:
       "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
+
     // icon: <FcHome />,
     icon: <img src="../icons/montaż.png" />,
-    imageBottom:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80",
+    imageBottom: "../images/montaz.jpg",
   },
 
   {
@@ -150,19 +93,10 @@ export default [
     title: "Fotowoltaika",
     description:
       "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "../images/panele_solarne.jpg",
-      "../images/panele_solarne2.jpg",
-    ],
+
     // icon: <BiSun />,
     icon: <img src="../icons/5.png" />,
-    imageBottom: "../images/panele_solarne.jpg",
+    imageBottom: "../images/panele solarne.jpg",
   },
   {
     id: 10,
@@ -170,12 +104,7 @@ export default [
     title: "Oświetlenie zewnętrzne i ogrodowe",
     description:
       "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
+
     modalImages: ["../images/lampy.jpg", "../images/lampy2.jpg"],
     // icon: <FcIdea />,
     icon: <img src="../icons/9.png" />,
@@ -227,17 +156,7 @@ export default [
     title: " Telewizja Dozorowa CCTV",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
+
     icon: <img src="../icons/7.png" />,
     imageBottom: "../images/kamera4.jpg",
   },
@@ -247,12 +166,7 @@ export default [
     title: " Systemy Alarmowe",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
+
     modalImages: ["../images/alarm.jpg", "../images/alarm2.jpg"],
     // icon: <FcIdea />,
     icon: <img src="../icons/8.png" />,
@@ -265,17 +179,7 @@ export default [
     title: " Wideodomofony",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
+
     icon: <img src="../icons/6.png" />,
     imageBottom:
       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80",
@@ -286,20 +190,9 @@ export default [
     title: " Kontrola Dostępu",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
+
     icon: <img src="../icons/kontrola.png" />,
-    imageBottom:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80",
+    imageBottom: "../images/zegar.jpg",
   },
   {
     id: 17,
@@ -307,17 +200,7 @@ export default [
     title: " Kontrola Czasu Pracy",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
+
     icon: <img src="../icons/10.png" />,
     imageBottom: "../images/zegar2.jpg",
   },
@@ -328,19 +211,9 @@ export default [
     title: " Telefonia VOIP",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
+
     icon: <img src="../icons/telefonia.png" />,
-    imageBottom: "../images/telefon2.jpg",
+    imageBottom: "../images/telefonia_voip.jpg",
   },
   {
     id: 19,
@@ -349,20 +222,8 @@ export default [
     subtitle: "Napędy do bram",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
-    icon: <img src="../icons/1.png" />,
-    imageBottom:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80",
+    icon: <img src="../icons/automatic.png" />,
+    imageBottom: "../images/biuro.jpg",
   },
 
   {
@@ -371,17 +232,6 @@ export default [
     title: " Szlabany",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
     icon: <img src="../icons/11.png" />,
     imageBottom: "../images/szlaban.jpg",
   },
@@ -391,20 +241,8 @@ export default [
     title: " Instalacje Elektryczne",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
     icon: <img src="../icons/costam.png" />,
-    imageBottom:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80",
+    imageBottom: "../images/przewody.jpg",
   },
   {
     id: 20,
@@ -413,17 +251,7 @@ export default [
     // subtitle: "Certyfikowane",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
+
     icon: <img src="../icons/3.png" />,
     imageBottom: "../images/modem.jpg",
   },
@@ -433,17 +261,6 @@ export default [
     title: " Serwerownie",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
     icon: <img src="../icons/serwerownia.png" />,
     imageBottom: "../images/serwerownia2.jpg",
   },
@@ -453,17 +270,6 @@ export default [
     title: " Administrowanie Sieciami",
     description:
       "quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,",
-    modalText:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci velit",
-    modalText2:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalText3:
-      "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipiscieque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, consectetur, adipisci",
-    modalImages: [
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    ],
     icon: <img src="../icons/13.png" />,
     imageBottom: "../images/kable3.jpg",
   },

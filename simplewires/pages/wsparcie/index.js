@@ -14,11 +14,20 @@ const index = () => {
   return (
     <Layout pageMeta={pageMeta}>
       <div className={styles.Wrapper}>
-        <header className={styles.Header}>
+        {/* <header className={styles.Header}>
           <h2>
             Wsparcie techniczne, <br /> <span>Simple Wires</span>
           </h2>
-        </header>
+        </header> */}
+        <div className={styles.Support}>
+          <div className={styles.SupportContent}>
+            <img
+              src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+              alt=""
+            />
+            <h1>Zapewniamy wsparcie techniczne</h1>
+          </div>
+        </div>
         <div>
           <div className={styles.Availability}>
             <Slide duration={0.6} from={"left"} className={styles.Content}>

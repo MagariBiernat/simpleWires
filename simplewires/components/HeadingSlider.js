@@ -3,6 +3,7 @@ import Slider from "react-slick"
 import Head from "next/head"
 import styles from "./HeadingSlider.module.scss"
 
+import FirmaImage from "@public/images/slider-firma.jpg"
 import {
   BiLeftArrow as ArrowLeft,
   BiRightArrow as ArrowRight,
@@ -10,30 +11,32 @@ import {
 const MockData = [
   {
     bgColor: "#fff",
-    image:
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    headingTitle: "Sample Awesome Title Raz ",
+    image: FirmaImage,
+    headingTitle: "Oferta dla Twojego domu",
     paragraphText:
-      "lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      "W naszej ofercie znajdziesz wiele zastosowań, dzięki którym Twój dom będzie jeszcze lepszym miejscem",
     buttonColor: "red",
+    buttonText: "Sprawdź ofertę",
   },
   {
     bgColor: "red",
     image:
       "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1414&q=80",
-    headingTitle: "Sample Awesome Title Dwa ",
+    headingTitle: "Oferta dla Twojej firmy ",
     paragraphText:
-      "lorem ipsu lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumm",
+      "Dzięki naszej ofercie Twoja firma będzie jeszcze lepszym miejscem do pracy i dla Ciebie, i dla Twoich pracowników.",
     buttonColor: "green",
+    buttonText: "Sprawdź ofertę",
   },
   {
     bgColor: "red",
     image:
       "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    headingTitle: "Sample Awesome Title Trzy ",
+    headingTitle: "Skontaktuj się z nami ",
     paragraphText:
-      "lorem ipsu lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ",
+      "Jesteś gotowy na współpracę z nami ? Zapraszamy do kontaktu",
     buttonColor: "orange",
+    buttonText: "Kontakt",
   },
 ]
 
@@ -81,7 +84,7 @@ const HeadingSlider = () => {
               className={styles.sliderElement}
               style={{ background: `url('${item.image}')` }}
             >
-              <img src={item.image} />
+              {/* <img src={item.image} /> */}
               <div className={`content ${styles.sliderElement_data}`}>
                 <h2>{item.headingTitle}</h2>
                 <p>{item.paragraphText}</p>

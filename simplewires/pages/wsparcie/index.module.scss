@@ -43,6 +43,32 @@
   }
 }
 
+.Support {
+  width: 100%;
+  background: #fff;
+}
+
+.SupportContent {
+  width: 800%;
+  max-width: 1068px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  > img {
+    width: 80%;
+    padding: 20px;
+    margin-left: 60px;
+    margin-top: 60px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.1rem;
+  }
+}
+
 .Content {
   max-width: 760px;
   width: 80%;
@@ -52,15 +78,14 @@
 .Availability {
   padding: 42px 24px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: rgb(54, 195, 80);
-  border-top: 2px solid $mainYellow;
+  background: #fff;
   h1,
   p {
     text-align: center;
-    color: #fff;
+    color: #000;
   }
 
   h1 {

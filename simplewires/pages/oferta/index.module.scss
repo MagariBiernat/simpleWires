@@ -5,7 +5,7 @@
 .Header {
   position: relative;
   width: 100vw;
-  min-height: 540px;
+  min-height: 320px;
   background: url("https://images.unsplash.com/photo-1618494324467-bf974ccf5c60?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80");
   background-position: center;
   background-size: cover;
@@ -32,20 +32,20 @@
     position: absolute;
     min-width: 440px;
     top: 40%;
-    left: 55%;
+    left: 30%;
     transform: translate(-50%, -50%);
     color: white;
     z-index: 1;
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-align: left;
 
     @include lgMaxBreakPoint {
-      font-size: 2.7rem;
+      font-size: 2.4rem;
       min-width: 390px;
     }
 
     @include mdMaxBreakPoint {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       min-width: 280px;
     }
 
@@ -88,7 +88,6 @@
 
 .Firma {
   background: #fff;
-  border-top: 6px solid $mainYellow;
 }
 
 .Content {
@@ -117,12 +116,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
-  padding-bottom: 22px;
-  background: rgba(242, 242, 242, 0.7);
+  padding: 0px !important;
+  background: #fff;
   text-align: center;
-  border-radius: 8px;
-  box-shadow: 6px 4px 66px -22px rgb(20, 20, 20, 0.5);
+  border-radius: 4px;
+  box-shadow: 0px 0px 52px -12px rgb(20, 20, 20, 0.5);
 
   @include lgMaxBreakPoint {
     margin: 0;
@@ -144,13 +142,13 @@
 
     h4 {
       position: absolute;
-      left: 50%;
+      left: 52%;
       top: 50%;
-      width: 66%;
+      width: 60%;
       transform: translate(-50%, -50%);
       font-size: 0.9rem;
-      font-weight: 800;
-      letter-spacing: 2px;
+      font-weight: 600;
+      letter-spacing: 1px;
 
       @include customMaxBreakPoint(1368) {
       }
@@ -158,16 +156,17 @@
   }
 
   > .Top {
-    padding: 14px;
+    padding: 26px;
     margin-bottom: -6px;
 
     img {
-      width: 32px;
+      width: 26px;
+      max-height: 36px;
     }
   }
 
   > p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 300;
     margin: 16px 0 22px;
     padding: 0px 12px;
@@ -185,8 +184,13 @@
 .Bottom {
   position: relative;
   img {
-    height: 220px;
+    max-height: 240px;
     width: 100%;
+
+    @include lgMaxBreakPoint {
+      max-height: 360px;
+      width: 100%;
+    }
   }
 
   // &::before {
@@ -208,16 +212,16 @@
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: inset 10px 0px 120px rgba(255, 255, 255, 1);
-    background: rgba(255, 255, 255, 0.6);
+    box-shadow: inset 10px 0px 120px rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0);
   }
 
   button {
     position: absolute;
-    bottom: 0;
+    bottom: -5%;
     left: 50%;
     // width: 60%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, 0%);
     padding: 14px 22px;
     background: rgb(198, 40, 48);
     color: #fff;
@@ -227,6 +231,11 @@
     border: 0;
     z-index: 1;
     cursor: pointer;
+
+    &:hover {
+      background: rgb(198, 30, 68);
+      text-shadow: 0px 0px 1px black;
+    }
   }
 }
 
@@ -239,7 +248,6 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  background: $mainYellow;
   padding: 24px;
   padding-top: 6px;
 
@@ -282,11 +290,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    &:hover {
+      * {
+        color: red;
+      }
+    }
     svg {
-      font-size: 88px;
+      font-size: 58px;
+      margin-bottom: 6px;
 
       @include lgMaxBreakPoint {
-        font-size: 66px;
+        font-size: 46px;
       }
     }
 
@@ -316,7 +331,6 @@
   width: 100%;
   min-height: 120px;
   padding-bottom: 80px;
-  background: red;
   > div {
     display: flex;
     flex-direction: row;
@@ -345,9 +359,14 @@
       background: transparent;
       border: 3px solid $mainYellow;
       padding: 16px 32px;
-      color: #fff;
+      color: #000;
       font-weight: 600;
       border-radius: 2px;
+      transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+      &:hover {
+        background: $mainYellow;
+      }
 
       @include lgMaxBreakPoint {
         margin-top: 24px;

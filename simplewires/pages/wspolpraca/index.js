@@ -31,6 +31,44 @@ const index = () => {
   }
   return (
     <Layout pageMeta={pageMeta}>
+      <div>
+        <div className={styles.Partnership}>
+          <div>
+            <h1>
+              Co zyskują nasi <br /> partnerzy biznesowi?
+            </h1>
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+                molestiae voluptatum reprehenderit minus adipisci doloribus quas
+                esse eaque aspernatur, voluptatem distinctio delectus quos
+                impedit earum totam magni mollitia aliquam error? Accusantium
+                quia impedit iure quod sequi! Magnam laudantium est, maxime
+                libero veritatis quis qui quasi nobis laboriosam nulla dolore
+                cupiditate. Quod enim voluptatibus veritatis quam sit magni
+                facilis in? Repellat cupiditate recusandae ipsum, repellendus
+                facere optio, cum vero nobis quibusdam architecto sint. Iusto
+                quo nobis voluptates pariatur esse cum asperiores?
+              </p>
+              <FcApproval />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                vitae temporibus beatae ratione fuga doloribus aliquam rerum,
+                quia nihil a!
+              </p>
+            </div>
+          </div>
+          <div>
+            <Slide from={"right"} duration={0.6}>
+              <img
+                src={partnership}
+                alt="Wspolpraca z partnerami biznesowymi"
+              />
+            </Slide>
+          </div>
+        </div>
+      </div>
+
       <div className={styles.Wrapper}>
         <div></div>
         <div className={styles.Wspolpraca}>
@@ -43,45 +81,8 @@ const index = () => {
             </div>
           </div>
         </div>
-        <div>
-          <div className={styles.Partnership}>
-            <div>
-              <h1>
-                Co zyskują nasi <br /> partnerzy biznesowi?
-              </h1>
-              <div>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Soluta molestiae voluptatum reprehenderit minus adipisci
-                  doloribus quas esse eaque aspernatur, voluptatem distinctio
-                  delectus quos impedit earum totam magni mollitia aliquam
-                  error? Accusantium quia impedit iure quod sequi! Magnam
-                  laudantium est, maxime libero veritatis quis qui quasi nobis
-                  laboriosam nulla dolore cupiditate. Quod enim voluptatibus
-                  veritatis quam sit magni facilis in? Repellat cupiditate
-                  recusandae ipsum, repellendus facere optio, cum vero nobis
-                  quibusdam architecto sint. Iusto quo nobis voluptates pariatur
-                  esse cum asperiores?
-                </p>
-                <FcApproval />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                  vitae temporibus beatae ratione fuga doloribus aliquam rerum,
-                  quia nihil a!
-                </p>
-              </div>
-            </div>
-            <div>
-              <Slide from={"right"} duration={0.6}>
-                <img
-                  src={partnership}
-                  alt="Wspolpraca z partnerami biznesowymi"
-                />
-              </Slide>
-            </div>
-          </div>
-        </div>
-        <div>
+
+        {/* <div>
           <div className={styles.Wspolpraca}>
             <div className="content">
               <h1>Współpracujemy z firmami : </h1>
@@ -101,7 +102,7 @@ const index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div>
           <div className="content">
             <div className={styles.PartnershipContact}>
