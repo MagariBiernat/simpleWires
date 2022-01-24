@@ -1,7 +1,6 @@
 import React from "react"
 import FadeIn from "./FadeIn"
 import styles from "./ModalNumber.module.scss"
-import Slide from "./Slide"
 
 const ModalNumber = ({ setModal }) => {
   const [phone, setPhone] = React.useState("")
@@ -27,9 +26,25 @@ const ModalNumber = ({ setModal }) => {
     event.preventDefault()
 
     if (phone.length <= 6) {
-      alert("Podaj numer !")
+      return alert("Podaj numer !")
+    } else {
+      const data = { number: phone }
+      fetch("https://magaribiernat.com/simplewires/email/number", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((res) => {
+          if (res.status === 200) {
+            setModal(false)
+            setPhone("")
+            alert("Dziekujemy, skontaktujemy się z Tobą !")
+          }
+        })
+        .catch((err) => console.log(err))
     }
-    alert(phone)
   }
   return (
     <div className={styles.Overlay} ref={overlayRef}>

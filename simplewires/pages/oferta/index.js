@@ -2,16 +2,13 @@ import React from "react"
 import Layout from "@components/Layout"
 import styles from "./index.module.scss"
 import TextLoop from "react-text-loop"
-import FadeIn from "@components/FadeIn"
 import OfertaData from "data/Oferta"
-// import ModalOferta from "@components/ModalOferta"
 import { FiPhoneCall as ContactIcon } from "react-icons/fi"
 import { MdLocalOffer as OfferIcon } from "react-icons/md"
 import { GiTalk as MeetingIcon } from "react-icons/gi"
 import ModalNumber from "@components/ModalNumber"
 
 const Oferta = () => {
-  // const [oferta, setOferta] = React.useState(null)
   const [showPhoneModal, setShowPhoneModal] = React.useState()
   const pageMeta = {
     title: "Simple Wires - Dla Domu",
@@ -20,7 +17,6 @@ const Oferta = () => {
   return (
     <Layout pageMeta={pageMeta}>
       {showPhoneModal && <ModalNumber setModal={setShowPhoneModal} />}
-      {/* {oferta && <ModalOferta oferta={oferta} setOferta={setOferta} />} */}
       <header className={styles.Header}>
         <h1>
           Rozwiązania dla <br />
@@ -43,20 +39,15 @@ const Oferta = () => {
           {OfertaData.map(
             (item, index) =>
               item.type === "dom" && (
-                <FadeIn
-                  key={index}
-                  className={styles.ContentElement}
-                  duration={Math.random() * (1 - 0.5) + 0.5}
-                >
+                <div key={index} className={styles.ContentElement}>
                   <div className={styles.Top}>
                     {item.icon}
-
                     <h4>{item.title}</h4>
                   </div>
                   <div className={styles.Bottom}>
                     <img rel="preload" src={item.imageBottom} alt="" />
                   </div>
-                </FadeIn>
+                </div>
               )
           )}
         </div>
@@ -71,11 +62,11 @@ const Oferta = () => {
             </div>
             <div>
               <MeetingIcon /> <h1>Umówmy się na spotkanie</h1>{" "}
-              <p>Wypełnij formularz, albo zadzwoń do nas </p>
+              <p>Porozmawiajmy o Twoim przyszłym projekcie. </p>
             </div>
             <div>
               <OfferIcon /> <h1>Przygotujemy ofertę</h1>{" "}
-              <p>Wypełnij formularz, albo zadzwoń do nas</p>
+              <p> Przedstawimy korzystną dla Ciebie ofertę</p>
             </div>
           </div>
         </div>
@@ -86,21 +77,16 @@ const Oferta = () => {
           {OfertaData.map(
             (item, index) =>
               item.type === "firma" && (
-                <FadeIn
-                  key={index}
-                  className={styles.ContentElement}
-                  duration={Math.random() * (1 - 0.5) + 0.5}
-                >
+                <div key={index} className={styles.ContentElement}>
                   <div className={styles.Top}>
                     {item.icon}
-
                     <h4>{item.title}</h4>
                     <div></div>
                   </div>
                   <div className={styles.Bottom}>
                     <img rel="preload" src={item.imageBottom} alt="" />
                   </div>
-                </FadeIn>
+                </div>
               )
           )}
         </div>

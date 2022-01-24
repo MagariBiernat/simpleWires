@@ -7,22 +7,63 @@ import Slide from "@components/Slide"
 
 import Checkbox from "react-custom-checkbox"
 import { FiCheck } from "react-icons/fi"
+import { AiOutlineMail as Email, AiOutlinePhone as Phone } from "react-icons/ai"
+import { Link as LinkScroll } from "react-scroll"
 
 const pageMeta = {
   title: "Simple Wires - kontakt",
   description: "description",
 }
 
+const initialFormValues = {
+  firstName: "",
+  phoneNumber: "",
+  email: "",
+  content: "",
+}
+
 const Kontakt = () => {
   const [checkBoxChecked, setCheckBoxChecked] = React.useState(false)
+  const [formValues, setFormValues] = React.useState(initialFormValues)
   const router = useRouter()
 
   const handleChange = () => {
     setCheckBoxChecked(!checkBoxChecked)
   }
 
-  const handleSubmitForm = (event) => {
-    event.preventDefault()
+  const handleChangeForm = (e) => {
+    setFormValues({ ...formValues, [e.target.name]: e.target.value })
+  }
+
+  console.log(formValues)
+  const setAllInputsEmpty = () => {
+    Array.from(document.querySelectorAll("input, select, textarea")).forEach(
+      (input) => (input.value = "")
+    )
+  }
+
+  const handleSubmitForm = (e) => {
+    e.preventDefault()
+
+    if (Object.values(formValues).filter((x) => x.length === 0).length === 0) {
+      fetch("https://magaribiernat.com/simplewires/email/contact", {
+        method: "POST",
+        body: JSON.stringify(formValues),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((res) => {
+          if (res.status === 200) {
+            setAllInputsEmpty()
+            setFormValues(initialFormValues)
+            alert("Dziekujemy, skontaktujemy się z Tobą !")
+          }
+        })
+        .catch((err) => console.log(err))
+    } else {
+      alert("Prosze uzupełnić wszystkie pola")
+    }
   }
   return (
     <Layout pageMeta={pageMeta}>
@@ -30,12 +71,15 @@ const Kontakt = () => {
         <header className={styles.Header}>
           <div className={styles.HeaderInfo}>
             <h1>Skontaktuj się z nami</h1>
-            <button>Wypełnij formularz</button>
+            <button>
+              <LinkScroll to="contactForm" offset={-80} smooth={true}>
+                Wypełnij formularz
+              </LinkScroll>
+            </button>
           </div>
         </header>
         <div>
           <div className={styles.ContactWrapper}>
-            <p></p>
             <div className={styles.Contact}>
               <Slide from={"left"} duration={0.7}>
                 <p className={styles.Bold}>Bartosz</p>
@@ -44,8 +88,15 @@ const Kontakt = () => {
                   Alarmu, Kontroli dostępu, Okablowania strukturalnego, Sieci
                   LAN
                 </p>
-                <p>+48 730 165 916</p>
-                <p>bartek.holysz@simplewires.pl</p>
+                <a href="tel:730165916">
+                  <Phone /> +48 730 165 916
+                </a>
+                <p>
+                  <a href="mailto:bartek.holysz@simplewires.pl">
+                    <Email />
+                    bartek.holysz@simplewires.pl
+                  </a>
+                </p>
               </Slide>
               <div className={styles.ContactDivider}></div>
               <Slide from={"right"} duration={0.7}>
@@ -54,8 +105,15 @@ const Kontakt = () => {
                   Specjalista ds. Instalacji Elektrycznych, Automatyki
                   budynkowej, osprzętu elektrycznego
                 </p>
-                <p>+48 536 165 916</p>
-                <p>adrian.mycka@simplewires.pl</p>
+                <a href="tel:536165916">
+                  <Phone /> +48 536 165 916
+                </a>
+                <a href="mailto:adrian.mycka@simplewires.pl">
+                  <p>
+                    <Email />
+                    adrian.mycka@simplewires.pl
+                  </p>
+                </a>
               </Slide>
             </div>
           </div>
@@ -67,7 +125,7 @@ const Kontakt = () => {
               loading="lazy"
             ></iframe>
           </div>
-          <div className={styles.ContactFormWrapper}>
+          <div className={styles.ContactFormWrapper} id="contactForm">
             <h1>
               Masz pytanie?
               <br /> A moze chcesz nawiązać współprace? <br /> Wypełnij poniższy
@@ -87,22 +145,16 @@ const Kontakt = () => {
                       required={true}
                       autoComplete="true"
                       placeholder="Imię"
+                      onChange={handleChangeForm}
                     />
-
-                    {/* <input
-                      type="text"
-                      name="lastName"
-                      required="true"
-                      autoComplete="true"
-                      placeholder="Nazwisko"
-                    /> */}
 
                     <input
                       type="tel"
-                      name="phone"
+                      name="phoneNumber"
                       required={true}
                       autoComplete="true"
                       placeholder="Numer telefonu"
+                      onChange={handleChangeForm}
                     />
 
                     <input
@@ -111,13 +163,15 @@ const Kontakt = () => {
                       required={true}
                       autoComplete="true"
                       placeholder="Email"
+                      onChange={handleChangeForm}
                     />
                   </div>
                   <textarea
-                    name="message"
+                    name="content"
                     cols="30"
                     rows="10"
                     placeholder="Twoja wiadomość do nas"
+                    onChange={handleChangeForm}
                   ></textarea>
                 </div>
                 <div className={styles.FormCheckBox}>
@@ -146,7 +200,12 @@ const Kontakt = () => {
                   </label>
                 </div>
                 <div className={styles.FormButtons}>
-                  <button type="submit"> Wyślij zapytanie </button>
+                  <button
+                    type="submit"
+                    disabled={checkBoxChecked ? false : true}
+                  >
+                    Wyślij
+                  </button>
                 </div>
               </form>
               <Slide

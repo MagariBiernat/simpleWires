@@ -89,7 +89,7 @@ const HeadingSlider = () => {
                 <h2>{item.headingTitle}</h2>
                 <p>{item.paragraphText}</p>
                 <button style={{ background: `${item.buttonColor}` }}>
-                  Sprawdź ofertę
+                  {item.buttonText}
                 </button>
               </div>
             </div>

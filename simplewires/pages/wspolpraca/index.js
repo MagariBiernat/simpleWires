@@ -4,10 +4,6 @@ import Link from "next/link"
 import styles from "./index.module.scss"
 import bcs from "@public/certified_partners/bcs.png"
 
-import fibrainLogo from "@public/partners/fibrain-logo.jpg"
-import satelLogo from "@public/partners/logo-satel.svg"
-import polonAlfaLogo from "@public/partners/polon-alfa.png"
-import rogerLogo from "@public/partners/roger.png"
 import Checkbox from "react-custom-checkbox"
 import { FiCheck } from "react-icons/fi"
 import { FcApproval } from "react-icons/fc"
@@ -22,13 +18,64 @@ const pageMeta = {
   title: "Simple Wires - Wspolpraca",
   description: "Wspolpraca",
 }
+
+const initialFormValues = {
+  firstName: "",
+  lastName: "",
+  company: "",
+  email: "",
+  phoneNumber: "",
+  street: "",
+  postalCode: "",
+  city: "",
+  voivodeship: "",
+  content: "",
+}
+
 const index = () => {
   const [checkBoxChecked, setCheckBoxChecked] = React.useState(false)
-  console.log(checkBoxChecked)
+  const [formValues, setFormValues] = React.useState(initialFormValues)
+  const formRef = React.useRef(null)
+  console.log(formValues)
 
   const handleChange = () => {
     setCheckBoxChecked(!checkBoxChecked)
   }
+
+  const handleChangeForm = (e) => {
+    setFormValues({ ...formValues, [e.target.name]: e.target.value })
+  }
+
+  const setAllInputsEmpty = () => {
+    Array.from(document.querySelectorAll("input, select, textarea")).forEach(
+      (input) => (input.value = "")
+    )
+  }
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault()
+
+    if (Object.values(formValues).filter((x) => x.length === 0).length === 0) {
+      fetch("https://magaribiernat.com/simplewires/email/partnership", {
+        method: "POST",
+        body: JSON.stringify(formValues),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((res) => {
+          if (res.status === 200) {
+            setAllInputsEmpty()
+            setFormValues(initialFormValues)
+            alert("Dziekujemy, skontaktujemy się z Tobą !")
+          }
+        })
+        .catch((err) => console.log(err))
+    } else {
+      alert("Prosze uzupełnić wszystkie pola")
+    }
+  }
+
   return (
     <Layout pageMeta={pageMeta}>
       <div>
@@ -82,27 +129,6 @@ const index = () => {
           </div>
         </div>
 
-        {/* <div>
-          <div className={styles.Wspolpraca}>
-            <div className="content">
-              <h1>Współpracujemy z firmami : </h1>
-              <div className={styles.Logos}>
-                <Slide from={"right"} duration={0.7}>
-                  <img src={fibrainLogo} alt="" />
-                </Slide>
-                <Slide from={"right"} duration={0.6}>
-                  <img src={satelLogo} alt="" />
-                </Slide>
-                <Slide from={"left"} duration={0.7}>
-                  <img src={polonAlfaLogo} alt="" />
-                </Slide>
-                <Slide from={"left"} duration={0.6}>
-                  <img src={bcs} alt="" />
-                </Slide>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <div>
           <div className="content">
             <div className={styles.PartnershipContact}>
@@ -125,19 +151,64 @@ const index = () => {
               Jeśli chcesz z nami zawiązać współpracę partnerską, <br /> zgłoś
               się poprzez poniższy formularz
             </h1>
-            <form action="" className={styles.ContactPartnershipForm}>
+            <form
+              action=""
+              className={styles.ContactPartnershipForm}
+              onSubmit={handleFormSubmit}
+              ref={formRef}
+            >
               <div>
-                <input type="text" name="firstName" placeholder="Imię" />
-                <input type="text" name="lastName" placeholder="Nazwisko" />
-                <input type="text" name="companyName" placeholder="Firma" />
-                <input type="email" name="email" placeholder="E-Mail" />
-                <input type="phone" name="phone" placeholder="Numer telefonu" />
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder="Imię"
+                  onChange={handleChangeForm}
+                />
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Nazwisko"
+                  onChange={handleChangeForm}
+                />
+                <input
+                  type="text"
+                  name="company"
+                  placeholder="Firma"
+                  onChange={handleChangeForm}
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-Mail"
+                  onChange={handleChangeForm}
+                />
+                <input
+                  type="phone"
+                  name="phoneNumber"
+                  placeholder="Numer telefonu"
+                  onChange={handleChangeForm}
+                />
               </div>
               <div>
-                <input type="text" name="street" placeholder="Ulica" />
-                <input type="text" name="postal" placeholder="Kod pocztowy" />
-                <input type="text" name="city" placeholder="Miejscowość" />
-                <select name="voivodeship">
+                <input
+                  type="text"
+                  name="street"
+                  placeholder="Ulica"
+                  onChange={handleChangeForm}
+                />
+                <input
+                  type="text"
+                  name="postalCode"
+                  placeholder="Kod pocztowy"
+                  onChange={handleChangeForm}
+                />
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="Miejscowość"
+                  onChange={handleChangeForm}
+                />
+                <select name="voivodeship" onChange={handleChangeForm}>
                   <option value=""> - Województwo -</option>
                   <option value="lubelskie">Lubelskie</option>
                   <option value="malopolskie">Małopolskie</option>
@@ -145,11 +216,12 @@ const index = () => {
                   <option value="swietokrzyskie">Świętokrzyskie</option>
                 </select>
                 <textarea
-                  name=""
+                  name="content"
                   id=""
                   cols="30"
                   rows="10"
                   placeholder="Wiadomość.."
+                  onChange={handleChangeForm}
                 ></textarea>
               </div>
               <div>

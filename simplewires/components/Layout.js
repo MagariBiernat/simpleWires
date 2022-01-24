@@ -3,8 +3,14 @@ import Navigation from "./Navigation"
 import styles from "./Layout.module.scss"
 import Footer from "./Footer"
 import ContactSide from "./ContactSide"
+import CookieConsent, {
+  Cookies,
+  getCookieConsentValue,
+} from "react-cookie-consent"
 
 export default function Layout({ children, pageMeta, modalOpen }) {
+  console.log(getCookieConsentValue())
+
   return (
     <div className={`${styles.MainWrapper} ${styles.OverflowHidden}`}>
       {modalOpen && (
@@ -33,6 +39,17 @@ export default function Layout({ children, pageMeta, modalOpen }) {
       <main className={modalOpen && styles.OverflowHidden}>{children}</main>
       <ContactSide />
       <Footer />
+      <CookieConsent
+        debug={true}
+        location="bottom"
+        buttonText="Akceptuje"
+        cookieName="simpleWiresCookiesAgreementWebsiteCookie"
+        style={{ background: "#2B2b2B" }}
+        buttonStyle={{ color: "#bb553b", fontSize: "18px" }}
+        expires={150}
+      >
+        Ta strona korzysta z plików cookie.{" "}
+      </CookieConsent>
     </div>
   )
 }

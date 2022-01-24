@@ -43,7 +43,7 @@
       letter-spacing: 3px;
     }
 
-    > button {
+    button {
       margin-top: 22px;
       padding: 12px 24px;
       border: 0;
@@ -86,7 +86,7 @@
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
   max-width: 1060px;
-  padding-bottom: 16px;
+  padding: 32px 6px;
 
   @include mdMaxBreakPoint {
     grid-template-columns: 1fr;
@@ -94,10 +94,20 @@
 
   > div {
     position: relative;
-    padding: 16px 62px;
+    padding: 16px 22px;
     margin: 24px;
     background: inherit;
     text-align: center;
+  }
+
+  a {
+    display: inline;
+  }
+
+  svg {
+    vertical-align: middle;
+    font-size: 28px;
+    margin-right: 6px;
   }
 }
 
@@ -284,14 +294,19 @@
 
 .FormButtons {
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
 
   > button {
     width: 100%;
     padding: 16px;
     background: $mainYellow;
     border: 0;
+    border-radius: 4px;
     cursor: pointer;
+
+    &:disabled {
+      background: grey;
+      cursor: not-allowed;
+    }
 
     &:hover {
       background: transparentize($color: $mainYellow, $amount: 0.4);

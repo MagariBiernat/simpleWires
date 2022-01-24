@@ -3,10 +3,10 @@
 
 .Wrapper {
   position: fixed;
-  bottom: 10px;
+  bottom: 10%;
   right: -2px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 8px;
   z-index: 99999;
   border-bottom-left-radius: 22px;
@@ -16,11 +16,11 @@
   > div {
     background: #dfdfdf;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-left: 6px;
+    margin-top: 6px;
     border-radius: 60%;
   }
 

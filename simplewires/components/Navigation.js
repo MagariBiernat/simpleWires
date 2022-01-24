@@ -31,7 +31,7 @@ const Navigation = () => {
                   </a>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/realizacje">
                   <a
                     className={
@@ -43,7 +43,7 @@ const Navigation = () => {
                     Nasze realizacje
                   </a>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/wspolpraca">
                   <a
@@ -178,7 +178,7 @@ const Navigation = () => {
                       <p>O firmie</p>
                     </li>
                   </Link>
-                  <Link href="/realizacje">
+                  {/* <Link href="/realizacje">
                     <li
                       className={
                         router.pathname.includes("/realizacje")
@@ -189,7 +189,7 @@ const Navigation = () => {
                       <ProjectsIcon />
                       <p>Nasze realizacje</p>
                     </li>
-                  </Link>
+                  </Link> */}
 
                   <Link href="/kontakt">
                     <li
